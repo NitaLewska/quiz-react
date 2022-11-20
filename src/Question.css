@@ -1,0 +1,50 @@
+.question {
+    border: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.question__text{
+    font-size: 18px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.question:first-of-type .question__text{
+    padding-top: 0;
+}
+
+.question input[type=radio] {
+	display: none;
+}
+
+.question label {
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 14px;
+	border: 1px solid #999;
+	border-radius: 30px;
+	user-select: none;
+    background-color: aliceblue;
+    color: black;
+    width: 200px;
+    height: 55px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+/* Checked */
+.question input[type=radio]:checked + label {
+	background: #ffe0a6;
+}
+ 
+/* Hover */
+.question label:hover {
+	color: #666;
+}

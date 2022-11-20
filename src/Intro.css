@@ -1,0 +1,31 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.intro__heading{
+    font-size: 48px;
+    font-weight: 800;
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
+}
+
+.intro__description {
+    margin-top: 30px;
+    font-size: 30px;
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
+}
+
+.start__quiz {
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    font-size: 18px;
+}
+
