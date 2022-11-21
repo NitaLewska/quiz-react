@@ -13,4 +13,5 @@ main {
   background-blend-mode:overlay;
   background-size: cover;
   border-radius: 30px;
+  background-position: top;
 }

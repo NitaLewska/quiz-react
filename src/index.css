@@ -11,4 +11,5 @@ body{
   justify-content: center;
   background-color: black;
   padding: 30px;
+  overflow-x: hidden;
 }

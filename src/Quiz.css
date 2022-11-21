@@ -7,3 +7,42 @@
     padding: 30px;
     color: white;
 }
+
+.quiz__submit {
+    cursor: pointer;
+	padding: 0px 15px;
+	line-height: 14px;
+	border-radius: 30px;
+    background-color: aliceblue;
+    font-size: 20px;
+    color: black;
+    width: 70%;
+    height: 55px;
+    margin-top: 45px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz__result{
+    font-size: 30px;
+    margin:30px;
+}
+
+.quiz__reload{
+    cursor: pointer;
+	padding: 0px 15px;
+	line-height: 14px;
+	border-radius: 30px;
+    background-color: aliceblue;
+    font-size: 20px;
+    color: black;
+    width: 70%;
+    height: 55px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

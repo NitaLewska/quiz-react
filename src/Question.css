@@ -43,8 +43,17 @@
 .question input[type=radio]:checked + label {
 	background: #ffe0a6;
 }
+
+.question input[type=radio]:checked + label.results{
+	background: #ff0000
+}
  
 /* Hover */
 .question label:hover {
 	color: #666;
+}
+
+.red {
+    background-color: aquamarine !important;
+    border: 2px solid green !important
 }
