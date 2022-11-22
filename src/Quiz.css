@@ -25,6 +25,11 @@
     justify-content: center;
 }
 
+.quiz__submit:disabled {
+    background-color: grey;
+    cursor:not-allowed;
+}
+
 .quiz__result{
     font-size: 30px;
     margin:30px;
