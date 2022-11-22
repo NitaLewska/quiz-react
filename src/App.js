@@ -8,26 +8,28 @@ export default function App() {
   function startQuiz() {
     setQuizIsOn(true)
   }
-  
+
   const [questions, setQuestions] = React.useState(null)
+  const [category, setCategory] = React.useState("")
 
   React.useEffect(function () {
-    fetch("https://opentdb.com/api.php?amount=5&category=15&type=multiple")
+    fetch("https://opentdb.com/api.php?amount=5&type=multiple&category=" + category)
       .then(res => res.json())
       .then(data => setQuestions(data.results))
-      console.log("aaaa")
-  }, [])
+  }, [category])
 
   function restartQuiz(e) {
     e.preventDefault()
     window.location.reload()
-}
+  }
 
-  
+  function selectCategory() {
+    setCategory(document.getElementById("select_category").value)
+  }
 
   return (
     <main className="App">
-      {quizIsOn ? <Quiz questions={questions} restartQuiz={restartQuiz}/> : <Intro startQuiz={startQuiz} />}
+      {quizIsOn ? <Quiz questions={questions} restartQuiz={restartQuiz} /> : <Intro startQuiz={startQuiz} selectCategory={selectCategory} />}
     </main>
   );
 }
