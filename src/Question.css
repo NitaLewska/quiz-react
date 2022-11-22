@@ -45,7 +45,8 @@
 }
 
 .question input[type=radio]:checked + label.results{
-	background: #ff0000
+	background: #fd7575;
+    border: 1px solid black
 }
  
 /* Hover */
@@ -55,5 +56,5 @@
 
 .red {
     background-color: aquamarine !important;
-    border: 2px solid green !important
+    border: 1px solid black
 }
