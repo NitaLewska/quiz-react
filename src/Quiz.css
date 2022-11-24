@@ -1,4 +1,4 @@
-.quiz__page{
+.quiz__page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,13 +6,15 @@
     height: 100%;
     padding: 30px;
     color: white;
+    min-height: 750px;
+    height: fit-content;
 }
 
 .quiz__submit {
     cursor: pointer;
-	padding: 0px 15px;
-	line-height: 14px;
-	border-radius: 30px;
+    padding: 0px 15px;
+    line-height: 14px;
+    border-radius: 30px;
     background-color: aliceblue;
     font-size: 20px;
     color: black;
@@ -27,19 +29,20 @@
 
 .quiz__submit:disabled {
     background-color: rgba(128, 128, 128, 0.644);
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
 
-.quiz__result{
-    font-size: 30px;
-    margin:30px;
+.quiz__result {
+    font-size: 26px;
+    margin: 20px;
+    text-align: center;
 }
 
-.quiz__reload{
+.quiz__reload {
     cursor: pointer;
-	padding: 0px 15px;
-	line-height: 14px;
-	border-radius: 30px;
+    padding: 0px 15px;
+    line-height: 14px;
+    border-radius: 30px;
     background-color: aliceblue;
     font-size: 20px;
     color: black;
@@ -53,5 +56,5 @@
 }
 
 .quiz__reload:hover {
-        background-color: rgb(2, 255, 171);
+    background-color: rgb(2, 255, 171);
 }

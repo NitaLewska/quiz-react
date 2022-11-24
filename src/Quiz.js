@@ -18,16 +18,18 @@ export default function Quiz(props) {
 
     function submitAnswers(e) {
         e.preventDefault()
-
+        let scoreToSave = 0
         for (let i = 0; i < 5; i++) {
             setChosenAnswers(...chosenAnswers, chosenAnswers[i] = document.querySelector('input[name="' + props.questions[i].question + '"]:checked').id)
             if (document.querySelector('input[name="' + props.questions[i].question + '"]:checked').value === correctAnswers[i]) {
                 setScore(oldScore => oldScore + 1)
+                scoreToSave++
             }
-
         }
         setShowScore(true)
-
+        console.log(scoreToSave)
+        props.saveData(scoreToSave)
+        console.log(props.totalQuestions, props.totalPoints, localStorage.getItem('totalQuestions'), localStorage.getItem('totalPoints'))
     }
 
     const [amountOfAnswers, setAmountOfAnswers] = React.useState(0)
@@ -39,7 +41,7 @@ export default function Quiz(props) {
         <form className="quiz__page" onClick={() => handleClick()}>
             {questions}
             {!showScore ? <button onClick={submitAnswers} disabled={amountOfAnswers !== 5} className="quiz__submit">Check answers</button> :
-                (<><p className="quiz__result">Your score: {score} out of 5</p>
+                (<><p className="quiz__result">Your score: {score} out of 5<br />Total: {props.totalPoints + score} out of {props.totalQuestions}</p>
                     <button onClick={props.restartQuiz} className="quiz__reload">Play again</button></>)}
 
         </form>

@@ -6,9 +6,11 @@
     text-align: center;
     color: white;
     padding: 20px;
+    height: 750px;
 }
 
 .intro__heading {
+    margin-top: 150px;
     font-size: 48px;
     font-weight: 800;
     text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
@@ -47,4 +49,16 @@
     font-size: 18px;
     border-radius: 5px;
     text-align: center;
+}
+
+.quiz__clear_stats {
+    margin-top: auto;
+    width: 180px;
+    height: 30px;
+    border: none;
+    text-decoration: underline;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
 }

@@ -1,4 +1,5 @@
 import './Intro.css'
+import React from 'react'
 
 export default function Intro(props) {
     return (
@@ -33,8 +34,8 @@ export default function Intro(props) {
                 <option value="31">Japanese Anime &amp; Manga</option>
                 <option value="32">Cartoon &amp; Animations</option>
             </select>
-
             <button onClick={props.startQuiz} className='start__quiz'>Start Quiz</button>
+            <button onClick={props.clearStats} className="quiz__clear_stats">Erase Statistics</button>
         </section>
     )
 }
